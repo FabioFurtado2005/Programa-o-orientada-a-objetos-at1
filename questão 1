@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); //instancia do scanner
+		Scanner sc = new Scanner(System.in); 
 		
 		System.out.println("Digite 5 valores: ");
 	    int numero = sc.nextInt();
@@ -21,7 +21,7 @@ public class Main {
 		System.out.printf("Média Aritmetica: %f", mediaaritmetica);
 		
 		
-		sc.close(); //fechar a instancia do scanner
+		sc.close(); 
 		
 		
 
