@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); //instancia do scanner
+		
+		System.out.println("Digite 5 valores: ");
+	    int numero = sc.nextInt();
+		int  numero1 = sc.nextInt();
+		int  numero2 = sc.nextInt();
+		int  numero3 = sc.nextInt();
+		int  numero4 = sc.nextInt();
+		
+		float total = numero + numero1 + numero2 + numero3 + numero4;
+		
+		float mediaaritmetica = total / 5;
+		
+		
+		
+		System.out.printf("Média Aritmetica: %f", mediaaritmetica);
+		
+		
+		sc.close(); //fechar a instancia do scanner
+		
+		
+
+	}
+
+}
