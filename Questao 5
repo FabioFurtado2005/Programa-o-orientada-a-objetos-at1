@@ -2,29 +2,31 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); 
-		
-		System.out.println("Nome do produto: ");
-		String nome = sc.nextLine(); 
-		
-		System.out.println("Digite o valor do produto: ");
-	    double valorProduto = sc.nextInt();
-	    
-	    System.out.println("Qual é o desconto desejado?  ");
-	    double desconto= sc.nextInt();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-		
-		double novoValor = (valorProduto * desconto) - valorProduto;
-		
-		
-		System.out.printf("O produto %s que custava %f valorProduto agora custa %f", nome, valorProduto, novoValor);
-		
-		
-		sc.close();
-		
-		
+        System.out.println("Nome do produto: ");
+        String nome = sc.nextLine();
 
-	}
+        System.out.println("Digite o valor do produto: ");
+        double valorProduto = sc.nextDouble();
+
+        System.out.println("Qual é o desconto desejado?  ");
+        double desconto= sc.nextDouble();
+
+
+        double valorDesconto = valorProduto * (desconto / 100 );
+
+        double novoValor = valorProduto - valorDesconto;
+
+
+        System.out.printf("O(A) %s que custava %.2f agora com desconto desejado e custa %.2f", nome, valorProduto, novoValor);
+
+
+        sc.close();
+
+
+
+    }
 
 }
