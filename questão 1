@@ -2,29 +2,29 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); 
-		
-		System.out.println("Digite 5 valores: ");
-	    int numero = sc.nextInt();
-		int  numero1 = sc.nextInt();
-		int  numero2 = sc.nextInt();
-		int  numero3 = sc.nextInt();
-		int  numero4 = sc.nextInt();
-		
-		float total = numero + numero1 + numero2 + numero3 + numero4;
-		
-		float mediaaritmetica = total / 5;
-		
-		
-		
-		System.out.printf("Média Aritmetica: %f", mediaaritmetica);
-		
-		
-		sc.close(); 
-		
-		
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-	}
+        System.out.println("Digite 5 valores: ");
+        double numero = sc.nextDouble();
+        double numero1 = sc.nextDouble();
+        double numero2 = sc.nextDouble();
+        double numero3 = sc.nextDouble();
+        double numero4 = sc.nextDouble();
+
+        double total = numero + numero1 + numero2 + numero3 + numero4;
+
+        double mediaaritmetica = total / 5;
+
+
+
+        System.out.printf("A Média Aritmética dos números %.2f, %.2f, %.2f, %.2f, %.2f é %.2f",numero, numero1, numero2, numero3, numero4, mediaaritmetica);
+
+
+        sc.close();
+
+
+
+    }
 
 }
