@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String salarioStr = JOptionPane.showInputDialog("Digite o salário do funcionário:");
+
+        double salario = Double.parseDouble(salarioStr);
+
+        double aumento = salario * 0.15;
+
+        double novoSalario = salario + aumento;
+
+        String salarioReajustado= String.format("%.2f", salario);
+        String novoSalarioReajustado = String.format("%.2f", novoSalario);
+
+        String mensagem = String.format("O salário antigo era: R$ %s\nO novo salário é: R$ %s", salarioReajustado, novoSalarioReajustado);
+
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+}
