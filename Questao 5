@@ -20,7 +20,7 @@ public class Main {
         double novoValor = valorProduto - valorDesconto;
 
 
-        System.out.printf("O(A) %s que custava %.2f agora com desconto desejado e custa %.2f", nome, valorProduto, novoValor);
+        System.out.printf("O(A) %s que custava %.3f agora com desconto desejado e custa %.3f", nome, valorProduto, novoValor);
 
 
         sc.close();
